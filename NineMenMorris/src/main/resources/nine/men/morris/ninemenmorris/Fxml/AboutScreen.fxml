@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="860.0" stylesheets="@../Css/StartScreen.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nine.men.morris.ninemenmorris.StartScreenController">
+    <children>
+        <AnchorPane layoutX="25.0" layoutY="25.0" prefHeight="170.0" prefWidth="400.0" style="-fx-background-color: #fad47f; -fx-border-color: black;">
+            <children>
+                <Text layoutX="25.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Text>
+                <Line endX="175.0" layoutX="25.0" layoutY="50.0" strokeWidth="1.5" />
+                <Text layoutX="25.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nine Men's Morris, which is also knows as Merrils, Mill, Mills, Merels and Merreles, is an abstract strategy game played on a board. Each player starts with a set of pieces and the game is played in turns." textAlignment="JUSTIFY" wrappingWidth="345.12890625">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="25.0" layoutY="200.0" prefHeight="150.0" prefWidth="400.0" style="-fx-background-color: #fad47f; -fx-border-color: black;">
+            <children>
+                <Text layoutX="25.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Goal">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Text>
+                <Line endX="175.0" layoutX="25.0" layoutY="50.0" strokeWidth="1.5" />
+                <Text layoutX="25.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The game winner is the player that either reduces his opponent's pieces to just two, or blocks all pieces by leaving them with no legal moves." textAlignment="JUSTIFY" wrappingWidth="345.12890625">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="25.0" layoutY="355.0" prefHeight="210.0" prefWidth="400.0" style="-fx-background-color: #fad47f; -fx-border-color: black;">
+            <children>
+                <Text layoutX="25.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How to play">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Text>
+                <Line endX="175.0" layoutX="25.0" layoutY="50.0" strokeWidth="1.5" />
+                <Text layoutX="25.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="On each turn, the player to play, places or moves one of his pieces on any vacant point on the board. If the move forms a mill (three pieces in a line), the player has to remove one of the opponent's pieces. If the opponent is left with only 2 pieces, the game is over and the player wins." textAlignment="JUSTIFY" wrappingWidth="345.12890625">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="430.0" layoutY="25.0" prefHeight="540.0" prefWidth="400.0" style="-fx-background-color: #fad47f; -fx-border-color: black;">
+            <children>
+                <Text layoutX="25.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME STAGES">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Text>
+                <Line endX="200.0" layoutX="25.0" layoutY="50.0" strokeWidth="1.5" />
+                <Text layoutX="25.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This stage begins with an empty board and, on each turn, the player places one of his pieces on the board. Each player starts with 9 pieces. It's possible to make mills and remove pieces on this phase." textAlignment="JUSTIFY" wrappingWidth="345.12890625">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+                <Text layoutX="25.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Placing phase:">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text layoutX="25.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Moving phase:">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text layoutX="27.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This stage begins once all pieces have been placed. On each turn, the player may move a piece across a line to an adjacent vacant point on the board." textAlignment="JUSTIFY" wrappingWidth="345.12890625">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+                <Text layoutX="25.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flying phase:">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Text>
+                <Text layoutX="25.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This phase starts when a player is reduced to only three pieces. He can then move any of his pieces to any vacant point on the board." textAlignment="JUSTIFY" wrappingWidth="345.12890625">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+                <Button fx:id="BackButton" layoutX="315.0" layoutY="460.0" maxHeight="60.0" minHeight="60.0" minWidth="60.0" mnemonicParsing="false" onAction="#goBack" prefHeight="60.0" prefWidth="60.0" style="-fx-border-color: #fad47f;" stylesheets="@../Css/StartScreen.css">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <graphic>
+                        <ImageView blendMode="DARKEN" fitHeight="60.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/back.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</AnchorPane>
